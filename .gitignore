@@ -1,0 +1,17 @@
+# Java / Spring
+target/
+*.iml
+*.idea/
+*.class
+*.log
+.springBeans
+.sts4-cache/
+
+# Node / React
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
