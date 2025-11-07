@@ -30,3 +30,29 @@ Document Storage + JPA
 OpenAI Embeddings (RAG)
 
 
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- Java 17
+- Spring Boot 3
+- Spring Security + JWT
+- Spring Data JPA
+- H2/PostgreSQL (local dev vs prod)
+- OpenAI Embeddings API
+
+### Frontend
+- React (Vite)
+- TypeScript
+- TailwindCSS
+- JWT stored client-side
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YOUR_USER/ai-knowledge-assistant.git
+
