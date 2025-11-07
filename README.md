@@ -1,33 +1,32 @@
-# AI‑Enabled Knowledge Assistant
+# 🧠 AI Knowledge Assistant (RAG-based Document Q&A)
 
-RAG service that ingests PDFs and answers domain questions; pluggable vector stores.
+An intelligent assistant that lets users upload documents and ask questions, powered by **Java Spring Boot**, **React**, and **Retrieval-Augmented Generation (RAG)** using OpenAI embeddings.
 
-## Tech Stack
-Java, Spring Boot, LangChain4j, FAISS/Pinecone/MongoDB Atlas, OpenAI, Docker
+This project demonstrates full-stack development, authentication, secure API design, and an AI-enhanced knowledge workflow.
 
-## Screenshots / Demos
-_Add images or links here (e.g., Vercel/Render demo)._
+---
 
-## Quick Start
-```bash
-# 1) Initialize repo locally
-git init
-git add .
-git commit -m "chore: initial scaffolding"
-# 2) Create GitHub repo with the same name as this folder
-# 3) Set remote and push
-git branch -M main
-git remote add origin https://github.com/<your-username>/ai-knowledge-assistant.git
-git push -u origin main
-```
+## ✨ Features
 
-## Roadmap
-- [ ] Add minimal backend endpoint (Spring Boot) and healthcheck
-- [ ] Add minimal React UI scaffold (Vite) with API call
-- [ ] Write README usage with sample requests/responses
-- [ ] Add CI (GitHub Actions) for build + tests
-- [ ] Add Dockerfile & docker-compose (app + db + message broker)
-- [ ] Deploy demo (Render/Vercel/Railway/AWS) and link above
+| Feature | Status | Description |
+|--------|:------:|-------------|
+| User Registration & Login (JWT Auth) | ✅ | Secure authentication using Spring Security + JWT |
+| Document Upload | ✅ | Upload `.txt` / `.md` / `.pdf` files |
+| Text Chunking + Embedding | ✅ | Splits content & generates embeddings for RAG |
+| Chat / Ask Questions | ⚙️ In Progress | Uses semantic similarity to answer based on documents |
+| Vector Search | ⚙️ In Progress | Improving ranking & response quality |
 
-## License
-MIT © Padma Yamapuram
+---
+
+## 🏗️ Architecture
+React (Vite) UI
+↓
+JWT Auth in localStorage
+↓
+Spring Boot Backend (REST)
+↓
+Document Storage + JPA
+↓
+OpenAI Embeddings (RAG)
+
+
